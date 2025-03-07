@@ -1,0 +1,96 @@
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .background-black {
+    -webkit-print-color-adjust: exact; /* Для Chrome та Safari */
+    print-color-adjust: exact; /* Для Firefox та інших браузерів */
+    background-color: black; /* Фон тепер друкуватиметься */
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+  width: 210mm;
+  height: 297mm;
+  margin: 0;
+  padding: 20mm;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+}
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.one-bage {
+  display: flex;
+  gap: 0.5mm;
+}
+.background-black {
+  width: 56mm;
+  height: 80mm;
+  background-color: black;
+  border: 1px solid white;
+}
+.img-position {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.text-position {
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5mm;
+}
+h2 {
+  font-size: 20px;
+  margin: 0;
+  font-weight: 800;
+}
+h3 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: 400;
+}
+img {
+  width: 51mm;
+  height: 51mm;
+  margin-top: 10px;
+}
+.avatarWithBody {
+  width: 43mm;
+  height: 43mm;
+  margin-top: 9mm;
+  margin-bottom: 2mm;
+  position: relative;
+}
+span {
+  height: 10px;
+  width: 45mm;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 100%);
+  position: absolute;
+  margin-bottom: 2mm;
+}
+.many {
+  display: flex;
+  gap: 20px;
+}
