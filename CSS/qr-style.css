@@ -49,7 +49,7 @@ header a {
   flex-direction: column;
   gap: 15px;
   margin-top: 25px;
-  max-width: 400px;
+  max-width: 300px;
 }
 .service-list-item {
   padding: 20px;
@@ -61,14 +61,14 @@ header a {
   background-color: #fff;
 }
 .logo {
-  width: 100px;
+  width: 75px;
 }
 .service-title {
   font-family: "Roboto", serif;
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
-  font-size: 36px;
+  font-size: 26px;
   letter-spacing: 0.1rem;
 }
 .allo-box-div {
