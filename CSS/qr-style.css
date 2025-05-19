@@ -11,8 +11,8 @@ body {
   font-weight: 900;
   font-style: normal;
   font-size: 20px;
-  background-color: #ffffff;
-  color: #707070;
+  background-color: #ededed;
+  color: #fff;
   box-sizing: border-box;
 }
 a {
@@ -23,6 +23,9 @@ header {
   width: 100%;
   height: 37px;
   background-color: rgba(53, 53, 53, 0.35);
+}
+ul {
+  list-style: none;
 }
 
 header a {
@@ -35,170 +38,45 @@ header a {
   margin-left: 63px;
   align-items: center;
 }
-.osnova {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.all-div {
-  width: 100%;
-  height: 100vh;
+.mobile-version {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  align-items: center;
+  width: 100%;
 }
-.all-color-box {
-  opacity: 30%;
-  border-radius: 50%;
-  z-index: -1;
-  filter: blur(50px);
-}
-.yellow-box {
-  position: absolute;
-  width: 457px;
-  height: 421px;
-  background-color: yellow;
-
-  transform: rotate(47deg);
-  left: 25px;
-  top: -104px;
-}
-.purpul-box {
-  position: absolute;
-  width: 400px;
-  height: 439px;
-  background-color: #ef00ff;
-  transform: rotate(10deg);
-  left: -135px;
-  top: 193px;
-}
-.blue-box {
-  position: absolute;
-  width: 373px;
-  height: 354px;
-  background-color: #0099ff;
-  transform: rotate(47deg);
-  left: 106px;
-  top: 406px;
-}
-.red-box {
-  position: absolute;
-  width: 487px;
-  height: 429px;
-  background-color: #ff0092;
-  transform: rotate(107deg);
-  left: 490px;
-  top: 56px;
-}
-
-.main-container-qr {
+.service-List {
   display: flex;
   flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+  max-width: 400px;
+}
+.service-list-item {
+  padding: 20px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
   gap: 20px;
-  height: 100%;
-  justify-content: start;
-  align-items: start;
+  background-color: #fff;
 }
-/* ---------------випадаючий список-----------------*/
-.dropdown-input {
-  display: none;
+.logo {
+  width: 100px;
 }
-.dropdown-content {
-  display: none;
-  width: 300px;
-  padding: 15px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  border: 1px solid #70707043;
-  border-radius: 30px;
+.service-title {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 36px;
+  letter-spacing: 0.1rem;
 }
-.span-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  color: #ffffff;
-  padding: 10px 10px 13px 10px;
-  border-radius: 20px;
+.allo-box-div {
+  background-image: linear-gradient(90deg, #310012, #ff005d);
 }
-.allobox-link {
-  background-color: rgb(0, 0, 0);
-  opacity: 75%;
+.kyivstar-div {
+  background-image: linear-gradient(90deg, #01232f, #00bfff);
 }
-.jet-link {
-  background-color: #29235c;
-  opacity: 75%;
-}
-.vodafone-link {
-  background-color: #8f1417;
-  opacity: 75%;
-}
-.dropdown-content img {
-  width: 100%;
-  margin-bottom: 10px;
-}
-.dropdown-input:checked + .dropdown-label + .dropdown-content {
-  display: block;
-  border-radius: 0 0 30px 30px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.dropdown-input:checked + .dropdown-label {
-  border-radius: 30px 30px 0 0;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.dropdown-label {
-  width: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-  border: 1px solid #70707043;
-  border-radius: 30px;
-  padding: 15px 15px 15px 15px;
-  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.17);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-}
-.jet-label {
-  position: relative;
-}
-.jet-label img {
-  height: 40px;
-  width: 40px;
-  position: absolute;
-  left: 10px;
-}
-.vodafone-label {
-  position: relative;
-}
-.vodafone-label img {
-  height: 37px;
-  width: 37px;
-  position: absolute;
-  left: 10px;
-}
-.allo-box-label {
-  position: relative;
-}
-.allo-box-label img {
-  height: 40px;
-  width: 40px;
-  position: absolute;
-  left: 10px;
-  fill: #ef00ff;
-}
-
-/*  --------------------------  для планшета  -------------------  */
-
-@media screen and (min-width: 900px) {
-  .violet-box {
-    position: absolute;
-    width: 499px;
-    height: 100%;
-    z-index: -1;
-    right: 0;
-    top: 0;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0), #ee00ff44 100%);
-  }
+.vodafone-div {
+  background-image: linear-gradient(90deg, #350000, #ff0000);
 }
