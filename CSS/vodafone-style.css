@@ -17,55 +17,177 @@
 }
 .tarif-container {
   position: relative;
-  width: 312px;
-  height: 77px;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 320px;
+  padding: 3px;
   background-color: rgb(255, 255, 255);
 }
-.contur {
-  position: absolute;
-  z-index: 200;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  outline: 3px solid #fff;
-}
-.premium-container {
-  position: absolute;
-  width: 71px;
-  height: 77px;
-  background-color: transparent;
-  background-image: linear-gradient(-90deg, #cf0072, #e5007e);
+.premium-box {
+  width: 120px;
+  background-image: linear-gradient(90deg, #cf0072, #e5007e);
+  font-family: "Shantell Sans", cursive;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.1;
+  text-align: center;
   display: flex;
-  justify-content: center;
-}
-.premium-title-container {
-  position: absolute;
-  width: 54px;
-  height: 20px;
-  background-color: #7c134b;
-  display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  border-radius: 0 0px 5px 5px;
+  border-radius: 10px;
+  overflow: hidden;
 }
-.premium-title-container h4 {
-  font-size: small;
+.name-premium {
+  width: 100%;
+  background-color: #7c134b;
+  padding: 2px;
+  margin-bottom: 2px;
   color: #f9c3dd;
 }
-.red-box {
-  position: absolute;
-  background-color: red;
-  width: 100px;
-  height: 77px;
-  right: 0;
-  z-index: 2;
-  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+.main-premium-number {
+  font-size: 18px;
 }
-.light-red-box {
-  position: absolute;
-  background-color: rgb(253, 163, 163);
-  width: 100px;
-  height: 77px;
-  right: 10px;
-  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+.second-premium {
+  padding: 2px;
+  background-color: #eeafcc;
+  width: 93%;
+  margin: 3px 0;
+  border-radius: 7px;
+}
+.migration-title {
+  color: #e41871;
+  font-weight: 400;
+}
+.migration-premium-number {
+  color: #a3185b;
+  font-size: 18px;
+}
+.name-plus-premium {
+  width: 100%;
+  padding-left: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.premium-title {
+  margin-bottom: 3px;
+}
+.main-premium-number {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.migration-premium-number {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.tarif-title {
+  color: red;
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+.tarif-name {
+  color: red;
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+
+.divider {
+  border: 1px solid red;
+  margin: 5px 0;
+}
+.tarif-list {
+  display: flex;
+  position: relative;
+  padding-left: 8px;
+}
+.circle {
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: -8px;
+}
+.circle p {
+  line-height: 1;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  text-align: center;
+}
+.big {
+  font-size: 28px;
+}
+.yellow {
+  color: #f6ee99;
+}
+.mid {
+  font-size: 20px;
+}
+.mid-a {
+  font-size: 18px;
+}
+.mid-b {
+  font-size: 24px;
+}
+.tinny-text {
+  font-weight: 300;
+}
+.small {
+  font-size: 10px;
+  font-weight: 200;
+}
+.minutes {
+  font-weight: 200;
+  font-size: 16px;
+}
+.circle:first-child {
+  z-index: 5;
+  margin-left: 0;
+}
+.circle:nth-child(2) {
+  z-index: 4;
+}
+.circle:nth-child(3) {
+  z-index: 3;
+}
+.circle:nth-child(4) {
+  z-index: 2;
+}
+.circle:nth-child(5) {
+  z-index: 1;
+}
+.infinity {
+  fill: #fff;
+  width: 40px;
+  height: 20px;
+}
+.red-fild {
+  width: 100%;
+  height: 90px;
+  background-image: linear-gradient(#fff, red, red);
+  /* background-color: red; */
+  border-radius: 0 0 12px 12px;
+
+  margin-top: -28px;
+  display: flex;
+  align-items: end;
+  padding: 10px;
+  line-height: 0.9;
+  justify-content: space-between;
+  gap: 15px;
+}
+.first-mounth {
+  font-size: 16px;
+}
+.price {
+  font-size: 20px;
+  line-height: 0.8;
+  font-weight: 400;
+}
+.super {
+  font-size: 46px;
+  color: yellow;
+  font-weight: 900;
 }
