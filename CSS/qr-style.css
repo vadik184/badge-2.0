@@ -51,7 +51,7 @@ header a {
   margin-top: 25px;
   max-width: 350px;
 }
-.service-list-item {
+.service-list-link {
   padding: 15px;
   border: 2px solid #fff;
   border-radius: 25px;
@@ -70,6 +70,7 @@ header a {
   font-style: normal;
   font-size: 26px;
   letter-spacing: 0.1rem;
+  color: #fff;
 }
 .allo-box-div {
   background-image: linear-gradient(90deg, #310012, #ff005d);
