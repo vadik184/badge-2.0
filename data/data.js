@@ -1,8 +1,9 @@
 // data.js
-const tariffs = [
+const tariffsVodafone = [
   {
     id: 1,
-    name: "Red START",
+    title: "RED",
+    name: "START",
     price: 240,
     discont: 200,
     disconteMonth: 6,
@@ -24,7 +25,8 @@ const tariffs = [
   },
   {
     id: 2,
-    name: "Red PRO",
+    title: "RED",
+    name: "PRO",
     price: 330,
     discont: 250,
     disconteMonth: 6,
@@ -46,7 +48,8 @@ const tariffs = [
   },
   {
     id: 3,
-    name: "Red UNLIM",
+    title: "RED",
+    name: "UNLIM",
     price: 400,
     discont: 300,
     disconteMonth: 6,
@@ -68,7 +71,8 @@ const tariffs = [
   },
   {
     id: 4,
-    name: "Red UNLIME PLUS",
+    title: "RED",
+    name: "UNLIME PLUS",
     price: 470,
     discont: 350,
     disconteMonth: 6,
@@ -90,7 +94,8 @@ const tariffs = [
   },
   {
     id: 5,
-    name: "Red UNLIME MAX",
+    title: "RED",
+    name: "UNLIME MAX",
     price: 575,
     discont: 430,
     disconteMonth: 6,
@@ -112,7 +117,8 @@ const tariffs = [
   },
   {
     id: 6,
-    name: "Red ULTRA",
+    title: "RED",
+    name: "ULTRA",
     price: 700,
     discont: 525,
     disconteMonth: 6,
@@ -134,7 +140,8 @@ const tariffs = [
   },
   {
     id: 7,
-    name: "Red ULTRA VIP",
+    title: "RED",
+    name: "ULTRA VIP",
     price: 1500,
     discont: 1125,
     disconteMonth: 6,
