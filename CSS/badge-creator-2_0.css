@@ -163,8 +163,8 @@ input[name="name"] {
 .input:focus {
   border: 1px solid transparent;
   border-radius: 5px;
-  background-image: linear-gradient(white, white),
-    linear-gradient(45deg, #00ffc4, #00d0ff);
+  background-image:
+    linear-gradient(white, white), linear-gradient(45deg, #00ffc4, #00d0ff);
   background-origin: border-box;
   background-clip: padding-box, border-box;
   outline: none;
@@ -203,6 +203,15 @@ select {
 .upload-image-button {
   display: none;
 }
+.upload-photo {
+  display: flex;
+  padding: 10px;
+}
+.preview-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
 .form-button {
   position: relative;
   color: #fff;
@@ -225,8 +234,21 @@ select {
 .form-button:active {
   color: #0a758d;
   border: 2px solid transparent;
-  background-image: linear-gradient(45deg, #cdf8ee, #cef1f9),
+  background-image:
+    linear-gradient(45deg, #cdf8ee, #cef1f9),
     linear-gradient(45deg, #00ffc4, #00d0ff);
   background-origin: border-box;
   background-clip: padding-box, border-box;
+}
+.maket {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .maket {
+    display: flex;
+    max-width: 1000px;
+  }
+  .maket-img {
+    max-width: 1000px;
+  }
 }
