@@ -3,6 +3,10 @@ const nameInput = document.getElementById("name");
 const positionSelect = document.getElementById("position");
 const imageInput = document.getElementById("image-input-id");
 const photoPreview = document.querySelector(".upload-photo");
+const maketUserName = document.querySelector(".maket-user-name");
+//макет//
+//відображення імені
+
 //створюємо контейнер для бейджа
 const badgeContainer = document.createElement("div");
 badgeContainer.className = "badge-container";

@@ -9,6 +9,7 @@
   --button: #1a72e4;
   --button2: #569fff;
   --button-border: #68aeff;
+  --maket-text: #c3c3c3;
 }
 * {
   margin: 0;
@@ -53,12 +54,15 @@ header a {
 }
 
 .main-section {
+  /* position: relative; */
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: start;
   justify-content: center;
-  padding: 20px;
+  padding-left: 33.5px;
+  padding-top: 20px;
+  gap: 33.5px;
 }
 
 .choise-zone {
@@ -244,11 +248,87 @@ select {
   display: none;
 }
 @media screen and (min-width: 1280px) {
+  .main-section {
+    /* justify-content: flex-start; */
+  }
   .maket {
     display: flex;
-    max-width: 1000px;
+    position: relative;
   }
   .maket-img {
-    max-width: 1000px;
+    max-width: 905px;
+  }
+  .maket-img-blink {
+    position: absolute;
+    max-width: 905px;
+    z-index: 100;
+  }
+  .maket-info {
+    position: absolute;
+    width: 267px;
+    height: 375px;
+    background-color: black;
+    top: 103px;
+    right: 208px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  .maket-logo-container {
+    display: flex;
+    width: 100%;
+  }
+  .maket-logo {
+    width: 82px;
+    margin-left: 16px;
+    margin-top: 10px;
+  }
+  .maket-avatar {
+    width: 199px;
+    height: 199px;
+    margin-top: 8px;
+    position: relative;
+  }
+  .blak-gradient {
+    position: absolute;
+    width: 235px;
+    height: 35px;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.2),
+      rgb(0, 0, 0),
+      rgb(0, 0, 0)
+    );
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+  }
+  .maket-user-name {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--maket-text);
+    /* line-height: 31px; */
+    margin-top: 20px;
+  }
+  .maket-user-position {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: regular;
+    color: var(--maket-text);
+    margin-top: 11px;
+  }
+  .allo-ua {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: regular;
+    color: var(--maket-text);
+    position: absolute;
+    top: 480px;
+    left: 456px;
+  }
+  .maket-avatar img {
+    width: 100%;
   }
 }
